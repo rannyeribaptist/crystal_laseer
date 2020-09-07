@@ -1,0 +1,111 @@
+// Colors
+$light-pink: #CB6B8D;
+$pink: #BF4E66;
+$dark-pink: #A00D3E;
+$white: white;
+$black: #272525;
+
+// Breakpoints
+@mixin breakpoint($value) {
+  @if $value == extra-small {
+    @media (max-width: 400px) { @content; }
+  }
+
+  @else if $value == small-height {
+    @media (max-height: 500px) { @content; }
+  }
+
+  @else if $value == small-only {
+    @media (max-width: 424px) { @content; }
+  }
+
+  @else if $value == small-up {
+    @media (min-width: 425px) { @content; }
+  }
+
+  @else if $value == touch {
+    @media (max-width: 899px) { @content; }
+  }
+
+  @else if $value == medium {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $value == medium-up {
+    @media (min-width: 900px) { @content; }
+  }
+
+  @else if $value == large {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else if $value == extra-large {
+    @media (min-width: 1800px) { @content; }
+  }
+
+  @else if $value == limiter {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+// Managing theme colors with a mixin
+@mixin colors($attribute) {
+  @if $attribute == color {
+    &--white { color: $white };
+    &--black { color: $black };
+    &--light-pink { color: $light-pink };
+    &--pink { color: $pink };
+    &--dark-pink { color: $dark-pink };
+  }
+
+  @else if $attribute == background-color {
+    &--white { background-color: $white };
+    &--black { background-color: $black };
+    &--light-pink { background-color: $light-pink };
+    &--pink { background-color: $pink };
+    &--dark-pink { background-color: $dark-pink };
+  }
+
+  @else if $attribute == border-color {
+    &--white { border-color: $white };
+    &--black { border-color: $black };
+    &--light-pink { border-color: $light-pink };
+    &--pink { border-color: $pink };
+    &--dark-pink { border-color: $dark-pink };
+  }
+}
+
+// Fonts
+@font-face {
+  font-family: "nexabold";
+  src: url("../fonts/Nexa-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gothamlightitalic";
+  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gothammedium";
+  src: url("../fonts/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gothamxlight";
+  src: url("../fonts/Gotham-XLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gothamxlightitalic";
+  src: url("../fonts/Gotham-XLightita.otf") format("opentype");
+}
+
+// CSS animations
+// put the animations here!

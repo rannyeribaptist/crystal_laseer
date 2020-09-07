@@ -1,0 +1,18 @@
+---
+---
+// Color Variables, Breakpoints, utils and components
+@import "components/variables";
+@import "components/columns";
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
