@@ -3,9 +3,11 @@
 // Color Variables, Breakpoints, utils and components
 @import "components/variables";
 @import "components/columns";
+@import "components/navbar";
 
 body {
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -16,3 +18,5 @@ a {
   width: 100%;
   height: auto;
 }
+
+.color { @include colors("color") }

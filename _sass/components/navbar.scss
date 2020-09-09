@@ -1,0 +1,60 @@
+@import "variables";
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint("medium") { display: none }
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+  }
+
+  &__content {
+    display: none;
+
+    align-items: center;
+    justify-content: space-between;
+
+    img { display: none }
+
+    @include breakpoint("medium") {
+      width: 100%;
+      text-align: initial;
+
+      img { display: initial }
+    }
+
+    @include breakpoint("medium") { display: flex }
+    @include breakpoint("limiter");
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+
+    li { margin: 15px 0 }
+
+    @include breakpoint("medium") {
+      float: right;
+      width: fit-content;
+
+      li { display: inline; margin: 0 15px }
+    }
+  }
+}
