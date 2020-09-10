@@ -1,6 +1,10 @@
 @import "variables";
 
 .title {
+  &--small {
+    font-size: 4rem;
+  }
+
   @include colors("color");
 }
 

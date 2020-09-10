@@ -1,0 +1,70 @@
+@import "variables";
+
+.services-page {
+  height: fit-content;
+  min-height: calc(100vh - 110px);
+  overflow: hidden;
+  color: $white;
+
+  // Elements
+  &__content {
+    height: 100%;
+    padding: 0 35px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include breakpoint("limiter");
+  }
+
+  &__inner {
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint("medium-up") {
+      width: 50%;
+    }
+  }
+
+  &__small {
+    display: none;
+    @include breakpoint("small-only") {
+      display: block;
+    }
+  }
+
+  &__small-cover {
+    display: block;
+    overflow: hidden;
+    @include breakpoint("medium") {
+      display: none;
+    }
+  }
+
+  &__images {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+  }
+
+  &__images-cover {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(0.5);
+
+    @include breakpoint("medium") {
+      display: block;
+    }
+
+    @include breakpoint("medium-up") { filter: none }
+  }
+}
