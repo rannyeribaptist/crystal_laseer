@@ -7,6 +7,7 @@
 @import "components/home-page";
 @import "components/about-page";
 @import "components/services-page";
+@import "components/space-page";
 @import "components/social-links";
 @import "components/text";
 @import "components/text-card";
@@ -41,4 +42,8 @@ a {
 
 .center {
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
