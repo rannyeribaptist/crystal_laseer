@@ -1,0 +1,38 @@
+@import "variables";
+
+.page-content {
+  display: block;
+  height: 100vh;
+  text-align: right;
+
+  &__right {
+    display: none;
+    width: 25%;
+    overflow: hidden;
+    height: 100vh;
+
+    @include breakpoint("medium-up") { display: inline-block }
+  }
+
+  &__left {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+
+    @include breakpoint("medium-up") { width: 74% }
+    @include breakpoint("limiter");
+  }
+
+  &__inner {
+    padding: 25px;
+    min-height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include breakpoint("medium-up") { padding-left: 155px; }
+  }
+}

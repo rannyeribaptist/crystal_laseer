@@ -78,33 +78,8 @@ $black: #272525;
 
 // Fonts
 @font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype");
+  font-family: "sunshine";
+  src: url("../fonts/Sunshine.ttf") format("truetype");
 }
 
 // CSS animations
