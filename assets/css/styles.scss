@@ -4,7 +4,8 @@
 @import "components/variables";
 @import "components/columns";
 @import "components/navbar";
-@import "components/page-content";
+@import "components/about-page";
+@import "components/home-page";
 @import "components/social-links";
 @import "components/text";
 @import "components/text-card";
@@ -37,5 +38,5 @@ a {
 }
 
 .center {
-  margin: 0 auto; 
+  margin: 0 auto;
 }

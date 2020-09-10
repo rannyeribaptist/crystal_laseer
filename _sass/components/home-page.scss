@@ -1,29 +1,30 @@
 @import "variables";
 
-.page-content {
-  display: block;
-  height: 100vh;
+.home-page {
   text-align: right;
+  height: 100vh;
+  color: $dark-pink;
 
-  &__right {
-    display: none;
-    width: 25%;
-    overflow: hidden;
-    height: 100vh;
-
-    @include breakpoint("medium-up") { display: inline-block }
-  }
-
-  &__left {
+  // Elements
+  &__content {
     position: relative;
     text-align: left;
+    height: 100%;
     width: 100%;
     display: inline-block;
     vertical-align: top;
-    height: 100%;
 
     @include breakpoint("medium-up") { width: 74% }
     @include breakpoint("limiter");
+  }
+
+  &__image {
+    height: 100vh;
+    display: none;
+    width: 25%;
+    overflow: hidden;
+
+    @include breakpoint("medium-up") { display: inline-block }
   }
 
   &__inner {

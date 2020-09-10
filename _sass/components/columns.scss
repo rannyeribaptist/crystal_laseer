@@ -1,7 +1,7 @@
 @import "variables";
 
 .columns {
-  text-align: center;
+  text-align: left;
 
   &--spaced {
     @include breakpoint("medium") {
@@ -16,6 +16,7 @@
 
 .column {
   display: inline-block;
+  vertical-align: top;
 
   @include breakpoint("small-up") {
     &--sm-1 { width: 99% }
