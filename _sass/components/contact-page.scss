@@ -1,0 +1,35 @@
+@import "variables";
+
+.contact-page {
+  overflow: hidden;
+  color: $black;
+
+  // Elements
+  &__content {
+    height: 80vh;
+    padding: 0 35px;
+    position: relative;
+
+    @include breakpoint("limiter");
+  }
+
+  form {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 100%;
+    text-align: left;
+    padding-right: 30px;
+
+    label { margin-top: 10px }
+
+    input, textarea {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      display: block;
+      padding: 5px 15px;
+      border-radius: 5px;
+      border: 1px solid grey;
+    }
+  }
+}
