@@ -26,17 +26,23 @@ page_background: 272525
     <div class="services-page__inner">
       <div class="services-page__small-cover">
         <div class="services-page__small" id="small">
-          <div class="image-filter"><img src="http://via.placeholder.com/350x350" alt="" class="image-responsive"></div>
+          {% for service in site.services %}
+            <div class="image-filter">
+              <img src="{{ service.picture }}" alt="" class="image-responsive">
+            </div>
+          {% endfor %}
         </div>
       </div>
 
       <div class="slider" id="slider">
-        <div>
-          <h1 class="title title--small">A Crystal Laseer</h1>
-          <hr class="hr hr--white">
-          <br>
-          <h3 class="subtitle">A Crystal laseer é um centro de estética avançada especializada em tratamentos à laser. Fundada pela Deise Maciel, a Crystal Laseer, nasce para inovar e trazer procedimentos, com técnicas avançadas, equipamentos de última geração e uma equipe de profissionais altamente qualificada</h3>
-        </div>
+        {% for service in site.services %}
+          <div>
+            <h1 class="title title--small">{{ service.name }}</h1>
+            <hr class="hr hr--white">
+            <br>
+            <h3 class="subtitle">{{ service.content | markdownify }}</h3>
+          </div>
+        {% endfor %}
       </div>
 
       <br>
@@ -53,7 +59,11 @@ page_background: 272525
 
     <div class="services-page__images-cover">
       <div class="services-page__images" id="images">
-        <div class="image-filter"><img src="http://via.placeholder.com/350x350" alt="" class="image-responsive"></div>
+        {% for service in site.services %}
+          <div class="image-filter">
+            <img src="{{ service.picture }}" alt="" class="image-responsive">
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>

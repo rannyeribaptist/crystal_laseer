@@ -24,6 +24,11 @@
     width: 25%;
     overflow: hidden;
 
+    img {
+      height: 100%;
+      margin-left: -40%;
+    }
+
     @include breakpoint("medium-up") { display: inline-block }
   }
 

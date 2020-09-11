@@ -11,6 +11,10 @@
   }
 }
 
+.services-page__images > .slick-list {
+  margin-top: -250px;
+}
+
 .services-page__small > .slick-list > .slick-track > .slick-slide {
   img {
     max-width: 100%;

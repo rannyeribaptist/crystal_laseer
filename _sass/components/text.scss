@@ -3,6 +3,7 @@
 .title {
   &--small {
     font-size: 4rem;
+    line-break: anywhere;
   }
 
   @include colors("color");
